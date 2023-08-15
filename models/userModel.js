@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
     name: {
-        tupe: String,
+        type: String,
         required: true,
         trim: true
     },
