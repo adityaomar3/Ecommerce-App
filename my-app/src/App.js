@@ -1,9 +1,11 @@
 import { Counter } from './features/counter/Counter';
 import './App.css';
 
-import LoginPage from './features/pages/LoginPage';
-import SignupPage from './features/pages/SignupPage';
-import Home from './features/pages/Home';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
+import Home from './pages/Home';
+import Cart from './features/cart/Cart';
+import CartPage from './pages/CartPage';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -24,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/signup',
     element: <SignupPage></SignupPage>,
+  },
+  { // only for testing - then page will be added
+    path: '/cart',
+    element: <CartPage></CartPage>,
   },
 ]);
 
